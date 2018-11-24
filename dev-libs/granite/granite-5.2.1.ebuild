@@ -37,9 +37,6 @@ src_prepare() {
 }
 
 src_configure() {
-	local mycmakeargs=(
-		-DVALA_EXECUTABLE=${VALAC}
-	)
 
 	cmake-utils_src_configure
 }
