@@ -409,10 +409,8 @@ src_configure() {
 
 	# we use the system copy of pcre
 	# --with-external-pcre affects ext/pcre
-	# Many arches don't support pcre-jit
 	our_conf+=(
 		--with-external-pcre
-		--without-pcre-jit
 	)
 
 	# Catch CFLAGS problems
